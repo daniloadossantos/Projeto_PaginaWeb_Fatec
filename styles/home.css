@@ -1,0 +1,191 @@
+/*HOME - PAPEL DE PAREDE HOME - BOTÕES*/
+#Home {
+	background-image: url("../img/BG.png");
+	background-repeat: no-repeat;
+	background-color: var(--bg-azul-escuro);
+	overflow: hidden;
+	background-size: contain;
+	height: 100%;
+}
+
+.boxHome {
+	display: flex;
+	flex-direction: column;
+	padding: 10% 5% 5% 10%;
+	margin-left: 52%;
+	height: 100%;
+}
+
+.tituloHome {
+	color: var(--cor-branca-clara);
+	font-family: var(--font-titulo);
+	font-size: 2.3em;
+	margin: 0 0 2% 0;
+}
+
+.textoHome {
+	color: var(--cor-branca-clara);
+	font-family: var(--font-texto);
+	font-size: 1em;
+	line-height: 1.75em;
+	margin: 2% 0;
+}
+
+/*.buttonHome {
+	width: 120px;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	background-color: var(--cor-branca-clara);
+}*/
+
+.buttonHome,
+.buttonHome::after {
+	width: 180px;
+	padding: 16px 20px;
+	font-size: 18px;
+	background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+	border: 0;
+	color: #fff;
+	letter-spacing: 3px;
+	line-height: 1;
+	box-shadow: 6px 0px 0px #00e6f6;
+	outline: transparent;
+	position: relative;
+	margin: 3% 0;
+}
+
+.buttonHome::after {
+	--slice-0: inset(50% 50% 50% 50%);
+	--slice-1: inset(80% -6px 0 0);
+	--slice-2: inset(50% -6px 30% 0);
+	--slice-3: inset(10% -6px 85% 0);
+	--slice-4: inset(40% -6px 43% 0);
+	--slice-5: inset(80% -6px 5% 0);
+	content: "HOVER ME";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		45deg,
+		transparent 3%,
+		#00e6f6 3%,
+		#00e6f6 5%,
+		#ff013c 5%
+	);
+	text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+	clip-path: var(--slice-0);
+	transform: translateY(4px);
+}
+
+.buttonHome:hover::after {
+	animation: 1s glitch;
+	animation-timing-function: steps(2, end);
+}
+
+.buttonHome:active {
+	box-shadow: none;
+	transform: translateY(4px);
+}
+
+@keyframes glitch {
+	0% {
+		clip-path: var(--slice-1);
+		transform: translate(-20px, -10px);
+	}
+
+	10% {
+		clip-path: var(--slice-3);
+		transform: translate(10px, 10px);
+	}
+
+	20% {
+		clip-path: var(--slice-1);
+		transform: translate(-10px, 10px);
+	}
+
+	30% {
+		clip-path: var(--slice-3);
+		transform: translate(0px, 5px);
+	}
+
+	40% {
+		clip-path: var(--slice-2);
+		transform: translate(-5px, 0px);
+	}
+
+	50% {
+		clip-path: var(--slice-3);
+		transform: translate(5px, 0px);
+	}
+
+	60% {
+		clip-path: var(--slice-4);
+		transform: translate(5px, 10px);
+	}
+
+	70% {
+		clip-path: var(--slice-2);
+		transform: translate(-10px, 10px);
+	}
+
+	80% {
+		clip-path: var(--slice-5);
+		transform: translate(20px, -10px);
+	}
+
+	90% {
+		clip-path: var(--slice-1);
+		transform: translate(-10px, 0px);
+	}
+
+	100% {
+		clip-path: var(--slice-1);
+		transform: translate(0);
+	}
+}
+
+.buttonHome:link,
+.buttonHome:visited {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+	#Home {
+		background: url("../img/img_principal.jpg") no-repeat;
+		background-blend-mode: overlay;
+	}
+
+	.boxHome {
+		padding: 8% 5% 2% 10%;
+		width: 55%;
+		display: inline-flex;
+		margin: 0 auto;
+		justify-content: center;
+		background-color: var(--cor-preta-escura);
+		opacity: 0.8;
+	}
+
+	.boxHome > h2 {
+		font-size: 1.25em;
+	}
+
+	.textoHome {
+		margin: 20px 0;
+	}
+
+	p {
+		font-size: 0.95em;
+	}
+
+	.descricaoTexto {
+		margin: 20px;
+		line-height: 2.5em;
+		font-size: 0.95em;
+	}
+}

@@ -1,0 +1,182 @@
+@import url("./style.css");
+
+.formAssine {
+	padding: 5%;
+	background-image: url("../img/img-02.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	background-position-x: 50%;
+}
+
+.tituloForm {
+	background-color: var(--cor-branca-clara);
+	opacity: 80%;
+	border-radius: 8%;
+	color: var(--bg-azul-escuro);
+	font-family: var(--font-titulo);
+	font-size: 2.6em;
+	padding: 4%;
+	text-align: center;
+	width: 720px;
+	margin: auto;
+}
+
+form {
+	background-color: var(--cor-branca-clara);
+	padding: 2%;
+	width: 380px;
+	margin: 5% auto;
+	border-radius: 6px;
+}
+
+form > input,
+form > li {
+	height: 20px;
+	border-radius: 5px;
+	padding: 4.85%;
+	margin-left: 25px;
+	font-family: var(--font-texto);
+}
+
+select {
+	border-radius: 5px;
+	width: 190px;
+	height: 35px;
+	padding: 1.5%;
+}
+
+option {
+	font-weight: 300;
+}
+
+label,
+select {
+	color: #222;
+	font-family: var(--font-titulo);
+	margin-left: 25px;
+	font-size: 0.75em;
+}
+
+label.opt-list-item {
+	font-family: var(font-texto);
+	font-weight: 300;
+	font-size: 0.85em;
+}
+
+span {
+	color: #222;
+	font-family: var(--font-titulo);
+	font-size: 0.975em;
+}
+
+.textoForm {
+	color: black;
+}
+
+.opt-list {
+	list-style: none;
+	padding: 1% 8%;
+	font-size: 0.875em;
+}
+
+.buttons {
+	text-align: center;
+	font-size: 0.775em;
+}
+
+.buttonAssineForm {
+	display: inline-flex;
+	font-weight: 400;
+	letter-spacing: 3px;
+	font-size: 0.95em;
+	height: 42px;
+	width: 120px;
+	margin: 0 2%;
+	justify-content: center;
+	color: #fff;
+	background-color: #ff013c;
+	border: 2px solid #000;
+	font-weight: 300;
+	border-radius: 10px;
+	box-shadow: 5px 5px 0px #00e6f6;
+	transition: all 0.3s ease;
+}
+
+.buttonAssineForm:hover {
+	background-color: #fff;
+	color: #ff013c;
+	border: 2px solid #ff013c;
+	box-shadow: 5px 5px 0px #ff013c;
+}
+
+.buttonAssineForm:active {
+	background-color: #ff7360;
+	color: #fff;
+	box-shadow: none;
+	transform: translateY(4px);
+}
+
+#footerBoxForm {
+	background-color: var(--bg-azul-escuro);
+	padding: 2%;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+@media screen and (max-width: 1024px) {
+	#footerBoxForm {
+		background-color: var(--bg-azul-escuro);
+		padding: 6%;
+		text-align: center;
+		font-size: 0.675rem;
+	}
+
+	.tituloForm {
+		font-size: 1.8em;
+	}
+
+	form {
+		width: 680px;
+	}
+
+	label,
+	span,
+	select,
+	.opt-list {
+		font-size: 1.5em;
+		width: 350px;
+	}
+
+	form > input,
+	form > li {
+		height: 40px;
+		margin-left: 25px;
+		font-family: var(--font-texto);
+		width: 350px;
+		font-size: 0.9em;
+	}
+
+	select {
+		font-size: 0.875em;
+		height: 55px;
+	}
+
+	option {
+		font-weight: 300;
+		font-size: 0.475em;
+	}
+
+	.opt-list {
+		padding: 3% 9%;
+		margin-bottom: 5%;
+		width: 80%;
+	}
+
+	.buttons {
+		padding: 5%;
+	}
+
+	.buttonAssineForm {
+		font-size: 1.05em;
+	}
+}

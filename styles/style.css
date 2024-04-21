@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Prompt:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap");
+
+@import url("./menu.css");
+@import url("./cabecalho.css");
+@import url("./home.css");
+@import url("./form.css");
+@import url("./assine.css");
+@import url("./saibamais.css");
+
+:root {
+	--font-titulo: "Prompt";
+	--font-titulo-tamanho: 2em;
+	--font-titulo-weight: 700;
+
+	--font-texto: "Outfit";
+	--font-texto-tamanho: 0.875em;
+	--font-texto-weight: 400;
+
+	--cor-preta-escura: #0f0c0c;
+	--cor-preta-clara: #1f1f29;
+	--cor-branca-escura: #e5e1e1;
+	--cor-branca-clara: #f9f4f4;
+
+	--bg-azul-escuro: #0d0d0d;
+	--bg-roxo: #3f0071;
+	--bg-rosa: #fb2576;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	user-select: none;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: var(--font-texto);
+	color: var(--cor-branca-clara);
+	background-color: #cacaca;
+	font-size: 20px;
+}
+
+/*RODAPÉ*/
+#footerBox {
+	background-color: var(--bg-azul-escuro);
+	padding: 2%;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 1024px) {
+	body {
+		width: 100vw;
+		box-sizing: border-box;
+		font-size: 1.5em;
+	}
+}

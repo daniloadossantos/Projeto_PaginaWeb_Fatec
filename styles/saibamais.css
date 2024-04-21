@@ -1,0 +1,97 @@
+/*SEÇÃO JOGOS*/
+#idSaibaMais {
+	margin: 5% auto;
+	padding: 2% 0;
+	height: 100%;
+	background-image: url("../img/BG\ \(1\).png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: content-box;
+}
+
+.containerSaibaMais {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-left: 10%;
+}
+
+.containerContentsaibaMais,
+.containerContentsaibaMais01,
+.containerContentsaibaMais02 {
+	flex-grow: 1;
+	padding: 6%;
+	letter-spacing: 0.8px;
+	text-align: center;
+}
+
+.tituloSaibaMais {
+	color: var(--cor-branca-clara);
+	font-family: var(--font-titulo);
+	font-size: var(--font-titulo-tamanho);
+	padding-top: 4%;
+	text-align: center;
+	width: 720px;
+	margin: auto;
+}
+
+.descricaoBox {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 360px;
+	align-items: center;
+	text-align: center;
+	margin-inline: 8%;
+}
+
+.descricaoTexto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 300;
+	color: var(--cor-branca-escura);
+	list-style-type: none;
+	line-height: 1.5em;
+	margin: 6%;
+	width: 230px;
+	font-size: var(--font-texto-tamanho);
+}
+
+.textoJogo {
+	font: var(--font-texto);
+	color: var(--cor-branca-escura);
+	font-weight: 300;
+	font-size: var(--font-texto-tamanho);
+	margin-bottom: 8%;
+}
+
+.figureSaibaMais01,
+.figureSaibaMais02 {
+	text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.tituloSaibaMais {
+		font-size: 1.5em;
+	}
+
+	.containerSaibaMais {
+		margin: 0;
+	}
+
+	#Jogos {
+		background-image: url("../styles/responsividade/photodune-9235903-game-m-16x91-890x501.jpg");
+		background-position: 50%;
+		background-size: contain;
+		text-align: center;
+	}
+
+	#Jogos2 {
+		background-image: url("../styles/responsividade/download\ \(1\).jfif");
+		background-position: 50%;
+		background-size: contain;
+		text-align: center;
+		background-repeat: no-repeat;
+	}
+}

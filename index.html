@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UFT-8" />
+		<meta name="viewport" content="device-width" , inicital-scale="1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+
+		<title>Projeto - HTML & CSS</title>
+	</head>
+
+	<body>
+		<header id="headerBox">
+			<div>
+			<a class="simboloStart" style="text-decoration: none; color: #fff;" href="index.html"> <img
+					src="./img/game-launcher-svgrepo-com.svg"
+					alt="Logo Marca"
+					height="45px"
+					width="45px"
+					title="Viciados em Jogos" />
+				<p>Dê um start!</p>
+			</div>
+			<div class="boxTitulo">
+				<h1 class="headerTexto">Best Gaming</h1>
+				<h3 class="headerSubTexto">
+					Navegue à vontade e acesse seus jogos favoritos
+				</h3>
+			</a>
+			</div>
+		</header>
+		<nav id="navBox">
+			<a class="navBoxList" href="#Home">Home</a>
+			<a class="navBoxList" href="#idSaibaMais">Conheça mais</a>
+			<div class="dropBoxItem">
+				<a class="navBoxList" href="#idAssine">Planos</a>
+				<div class="dropdown-content">
+					<a class="dropDownItem" href="#Jogos">Jogos</a>
+					<a class="dropDownItem" href="form.html" target="_blank">Assine</a>
+				</div>
+			</div>
+			
+			<a class="navBoxList" href="#footerBox">Contato</a>
+		</nav>
+
+			<div class="container">
+					
+				<input type="checkbox" id="menu" class="container_botao" />
+				<label for="menu" class="container__rotulo">
+					<span class="cabeçalho_menu-hamburguer container_imagem"> </span>
+				</label>
+				<ul class="lista-menu">
+					<li class="lista-menu_item">
+						<a class="navBoxList" href="#Home">Home</a>
+					</li>
+					<li class="lista-menu_item" >
+						<a class="navBoxList" href="#idSaibaMais">Conheça mais</a>
+					</li>
+					<li class="lista-menu_item">
+						<a class="navBoxList" href="#idAssine">Planos</a>
+					</li>
+					<li class="lista-menu_item">
+						<a class="navBoxList" href="#footerBox">Contato</a>
+					</li>
+				</ul>
+
+				<a class="simboloStart-mobile" style="text-decoration: none; color: #fff;" href="index.html"> <img
+					src="./styles/responsividade/joystick-svgrepo-com.svg"
+					title="Viciados em Jogos" /></a>
+		</div>
+			
+
+		<main>
+			<section id="Home">
+				<div class="boxHome">
+					<h2 class="tituloHome">Aperte o PLAY e jogue!</h2>
+					<p class="textoHome">
+						Jogue novos jogos todo dia. A Best Gaming tem que a melhor
+						biblioteca de jogos para console, PC e nuvem. Sempre temos algo novo
+						para você e sua família.
+					</p>
+					<a class="buttonHome" href="#idAssine">Inscreva-se</a>
+					<a class="buttonHome" href="#idSaibaMais">Saber mais</a>
+				</div>
+			</section>
+
+			<section id="idSaibaMais">
+				<h2 class="tituloSaibaMais">
+					Jogue centenas de jogos em alta qualidade e de qualquer lugar
+				</h2>
+
+				<div class="containerSaibaMais">
+					<div class="containerContentsaibaMais">
+						<ul class="descricaoBox">
+							<li class="descricaoTexto">
+								<img
+									src="./img/Steam_icon_logo.svg"
+									height="60px"
+									width="60px" />
+								<p>Jogue jogos direto da sua conta Steam</p>
+							</li>
+
+							<li class="descricaoTexto">
+								<img
+									src="./img/ea-play-seeklogo.com.svg"
+									height="90px"
+									width="100px" />
+								<p>Tenha acesso aos jogos da EA Play</p>
+							</li>
+
+							<li class="descricaoTexto">
+								<img
+									src="./img/download-svgrepo-com.svg"
+									height="60px"
+									width="60px" />
+								<p>Baixe quantos jogos quiser</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="containerContentsaibaMais">
+						<ul class="descricaoBox">
+							<li class="descricaoTexto">
+								<img
+									src="./img/epic-games-logo.svg"
+									height="90px"
+									width="90px" />
+								<p>Jogue pela sua conta Epic Games</p>
+							</li>
+
+							<li class="descricaoTexto">
+								<img
+									src="./img/uplay-seeklogo.com.svg"
+									height="60px"
+									width="100px" />
+
+								<p>Tenha acesso aos jogos da UPlay (*assinatura premium)</p>
+							</li>
+
+							<li class="descricaoTexto">
+								<img
+									src="./img/game-9-svgrepo-com.svg"
+									height="60px"
+									width="60px" />
+
+								<p>Jogue de qualquer lugar (*plano Nuvem)</p>
+							</li>
+						</ul>
+					</div>
+					
+					<div id="Jogos" class="containerContentsaibaMais01">
+						<figure class="figureSaibaMais01">
+							<img
+								src="./img/csgo/img_csgo_2.jpg"
+								height="240px"
+								width="400px" />
+
+							<figcaption class="textoJogo">Counter-Strike (PC)</figcaption>
+						</figure>
+
+						<iframe
+							width="460"
+							height="305"
+							src="https://www.youtube.com/embed/6odQmwDoiFY?si=HnqmIM4mVUoIGYlN"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+					</div>
+
+					<div id="Jogos2" class="containerContentsaibaMais02">
+						<figure class="figureSaibaMais02">
+							<img
+								src="./img/valhalla/img-val-02.jpg"
+								height="240px"
+								width="400px" />
+
+							<figcaption class="textoJogo">Assassin's Creed Valhalla (PC/XBOX/PS5)</figcaption>
+						</figure>
+
+						<iframe  width="460" height="305" src="https://www.youtube.com/embed/TUbgBVTD7VI?si=R-rG7lSz1EGjkfn6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+
+					
+
+				</div>
+			</section>
+
+			<section id="idAssine">
+				<div>
+					<h2 class="tituloAssine">
+						Assine já!
+					</h2>
+					
+					<p class="textoAssine">Temos várias opções de planos para você. Escolha o melhor plano e aperte o botão "Assine Aqui"</p>
+				</div>
+				
+				<div class="cards">
+						
+					<div class="card">
+						<div class="cardPlano">
+							<h3 class="tituloCard">Pacote Básico</h3>
+							<img src="./img/cards/game-plugins-svgrepo-com.svg" class="coverImg">				
+				
+								<div class="cardDescricao">
+									<li class="textoDescricao">Biblioteca com +50 jogos</li>
+									<li class="textoDescricao">Indicado para iniciantes</li>
+									<li class="textoDescricao">Limite de 5 jogos por conta-ID</li>
+								</div>
+						</div>
+
+
+					</div>	
+					
+					<div class="card">	
+						<div class="cardPlano">
+							<h3 class="tituloCard">Pacote Gamer</h3>
+							<img src="./img/cards/game-booster-svgrepo-com.svg" class="coverImg">				
+				
+							<div class="cardDescricao">
+								<li class="textoDescricao">Todos os benefícios do Pacote Básico</li>
+								<li class="textoDescricao">+Biblioteca com +100 jogos</li>
+								<li class="textoDescricao">+Acesso ao App Gamer TV</li>
+								<li class="textoDescricao">+Limite de 10 jogos por conta-ID</li>
+							</div>						
+						</div>
+
+					</div>
+					
+					<div class="card">	
+						<div class="cardPlano">						
+							<h3 class="tituloCard">Pacote Gamer-Pro</h3>
+							<img src="./img/cards/cloud4-svgrepo-com.svg" class="coverImg">				
+				
+							<div class="cardDescricao">
+								<li class="textoDescricao">Todos os benefícios dos Pacotes Básico e Gamer-Pro</li>
+								<li class="textoDescricao">+Jogue diretamente da nuvem</li>
+								<li class="textoDescricao">+Jogue na TV, Tablet ou Celular*</li>
+								<li class="textoDescricao">+Sem limite de jogos por conta-ID</li>
+							</div>
+						</div>
+
+				</div>
+				
+				</div>
+
+			
+			<div class="containerAssine">
+				<a class="buttonAssine" href="form.html" target="_blank">Assinar</a>
+			</div>
+			
+			</section>
+
+
+
+		</main>
+
+		<footer id="footerBox">
+			<h3>Danilo Alves dos Santos - RA 22210022</h3>
+			<address>
+				<p>FATEC-SP</p>
+				<p>São Paulo-SP | Metrô Tiradentes</p>
+			</address>
+		</footer>
+	</body>
+</html>
